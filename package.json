@@ -1,7 +1,13 @@
 {
   "name": "poke-test",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
+  "main": "./src/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladHorii/poko-tt.git"
+  },
+  "author": "Vladislav Samoilenko <vlad.samoilenko.it@gmail.com>",
   "dependencies": {
     "@craco/craco": "^6.4.5",
     "@emotion/react": "^11.10.4",
@@ -51,9 +57,11 @@
     "semi": true,
     "singleQuote": false,
     "tabWidth": 2,
-    "importOrder": ["^components/(.*)$", "^[./]" ],
-    "importOrderSortSpecifiers": true 
-
+    "importOrder": [
+      "^components/(.*)$",
+      "^[./]"
+    ],
+    "importOrderSortSpecifiers": true
   },
   "browserslist": {
     "production": [
@@ -70,6 +78,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/styled-components": "^5.1.26",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
