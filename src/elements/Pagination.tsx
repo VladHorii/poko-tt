@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { getPage, getTotalItems, setPage } from "@/store/pokeSlice";
-import MuiPagination from "@mui/material/Pagination";
+import { Pagination as MuiPagination } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 

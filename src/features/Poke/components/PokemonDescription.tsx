@@ -1,8 +1,10 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { useGetPokemon } from "../hooks/useGetPokemon";
 import { PokemonInfo } from "./PokemonInfo";
@@ -26,9 +28,7 @@ export const PokemonDescription = ({ name, isExpanded, onExpanded }: Props) => {
         <Typography>{name}</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography>
-          {pokemon ? <PokemonInfo pokemon={pokemon} /> : "loading..."}
-        </Typography>
+        {pokemon ? <PokemonInfo pokemon={pokemon} /> : "loading..."}
       </AccordionDetails>
     </Accordion>
   );
