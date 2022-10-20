@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "main": "./src/index.tsx",
+  "homepage": "https://vladhorii.github.io/poko-tt/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VladHorii/poko-tt.git"
